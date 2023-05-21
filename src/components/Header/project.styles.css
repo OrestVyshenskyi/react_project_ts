@@ -1,0 +1,222 @@
+.header_black{
+    display: flex;
+    background: dimgray;
+    height: 130px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 100px;
+    font-style: oblique;
+    border-radius: 50px;
+    margin: 10px;
+    border: 2px solid black;
+}
+.header_white{
+    display: flex;
+    background: lightgoldenrodyellow;
+    height: 130px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 100px;
+    font-style: oblique;
+    border-radius: 50px;
+    margin: 10px;
+    border: 2px solid black;
+}
+.user{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    height: 42px;
+    padding: 0 20px;
+    margin: 0 20px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+.userPhoto{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+}
+input{
+    border-radius: 20px;
+    height: 35px;
+    width: 500px;
+    font-size: 15px;
+}
+.findFilms{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+
+}
+.searchForm{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.allFilms{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 100px;
+    font-size: 30px;
+
+}
+.links_black{
+    text-decoration: none;
+    color: black;
+    background: dimgray;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.links_white{
+    text-decoration: none;
+    color: red;
+    background: lightgoldenrodyellow;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid black;
+
+}
+.movie{
+    text-align: center;
+    background: dimgray;
+    margin: 10px;
+    width: 500px;
+    height: 700px;
+    border-radius: 30px;
+    padding: 15px;
+    text-decoration: none;
+    border: 2px solid black;
+
+}
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.image{
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.film{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+}
+.film_image{
+    margin: 20px;
+    width: 400px;
+    height: 600px;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+.film_info{
+    margin: 20px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 800px;
+    background: dimgray;
+    text-align: center;
+    padding: 50px;
+    font-size: 25px;
+    color: black;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+.overview{
+    font-size: 18px;
+    width: 350px;
+    height: 100px;
+    overflow: auto;
+    background: white;
+    border-radius: 20px;
+    padding: 5px;
+    text-overflow: ellipsis;
+    border: 2px solid black;
+
+}
+.genre_link{
+    text-align: center;
+    background: dimgray;
+    text-decoration: none;
+    font-size: 50px;
+    color: black;
+    margin: 40px 0 100px 0;
+    width: 350px;
+    border-radius: 20px;
+    border: 2px solid black;
+
+
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchMovie{
+    width: 1650px;
+    height: 800px;
+    display: flex;
+    overflow: auto;
+    text-overflow: ellipsis;
+
+}
+.searchBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.genres{
+    display: flex;
+    justify-content: space-around;
+}
+.genre{
+    border-radius: 20px;
+    background: white;
+    padding: 10px;
+}
+.raiting{
+    margin: 30px;
+    text-align: center;
+}
+.genre_name{
+    margin: 50px 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: dimgray;
+    border-radius: 30px;
+    border: 2px solid black;
+
+}
+.genre_links{
+    margin: 30px;
+    font-size: 20px;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

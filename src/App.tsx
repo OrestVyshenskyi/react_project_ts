@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Navigate, Route, Routes} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import {MainLayout} from "./layouts";
+import MoviePage from "./pages/MoviePage";
+import MoviesGenres from "./components/MoviesGenres";
+import GenreSorted from "./components/GenreSorted";
+import Movies from "./components/Movies";
+import './App.css'
+import FindMoviesForm from "./components/FindMoviesForm";
+
+const App = () => {
+    return (
+        <div>
+          <Routes>
+            <Route path={'/'} element={<MainLayout/>}>
+              <Route index element={<Navigate to={'search'}/>}></Route>
+              <Route path={'search'} index element={<FindMoviesForm/>}></Route>
+              <Route path={'films'} element={<MoviePage/>}></Route>
+              <Route path={'films/genres'} element={<MoviesGenres/>}></Route>
+              <Route path={'films/:filmId'} element={<Movies/>}></Route>
+              <Route path={'search/:filmId'} element={<Movies/>}></Route>
+              <Route path={'films/genres/:genreId'} element={<GenreSorted/>}></Route>
+              <Route path={'films/genres/:genreId/:filmId'} element={<Movies/>}></Route>
+            </Route>
+          </Routes>
+        </div>
+    );
+};
 
 export default App;
